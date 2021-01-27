@@ -1,0 +1,51 @@
+:global {
+  :root {
+    --unit: 12px;
+
+    --screen-width: 36;
+    --screen-aspect: 0.75;
+
+    --border-radius: 5px;
+    --border-width: 1px;
+    --border-color: rgb(212, 202, 202);
+  }
+}
+
+.desktopWrapper {
+  width: calc(var(--screen-width) * var(--unit));
+  height: calc(var(--screen-aspect) * var(--screen-width) * var(--unit));
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+
+  > aside {
+    border-bottom: solid var(--border-width) var(--border-color);
+    background-color: whitesmoke;
+  }
+}
+
+.box {
+  padding: var(--unit);
+}
+
+.circle {
+  width: var(--unit);
+  height: var(--unit);
+  border-radius: 50%;
+  background-color: var(--background-color);
+  display: block;
+}
+
+.horizontalGroup {
+  display: grid;
+  gap: var(--unit);
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+.button {
+  font-family: inherit;
+  font-size: inherit;
+}
