@@ -7,7 +7,11 @@
 
     --border-radius: 5px;
     --border-width: 1px;
-    --border-color: rgb(212, 202, 202);
+    --border-color: rgb(213, 199, 199);
+
+    --light-accent: whitesmoke;
+    --medium-accent: var(--border-color);
+    --dark-accent: rgb(189, 178, 178);
   }
 }
 
@@ -22,12 +26,13 @@
 
   > aside {
     border-bottom: solid var(--border-width) var(--border-color);
-    background-color: whitesmoke;
+    background-color: var(--light-accent);
   }
 }
 
 .box {
   padding: var(--unit);
+  height: 100%;
 }
 
 .circle {
@@ -45,7 +50,49 @@
   justify-content: start;
 }
 
+.verticalGroup {
+  display: grid;
+  gap: calc(var(--gap) * var(--unit));
+  align-content: start;
+}
+
 .button {
   font-family: inherit;
   font-size: inherit;
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  cursor: pointer;
+  background-color: var(--light-accent);
+  &:hover {
+    background-color: var(--medium-accent);
+    border-color: var(--dark-accent);
+  }
+}
+
+.boxWithBorder {
+  @extend .box;
+  background-color: var(--light-accent);
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.center {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+.type {
+  font-size: calc(var(--size, 1) * var(--font-size));
+}
+
+.input {
+  background-color: white;
+  font-size: inherit;
+  font-family: inherit;
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  display: block;
 }

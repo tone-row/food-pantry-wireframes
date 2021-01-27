@@ -10,12 +10,13 @@
 }
 
 :root {
-  --font-family: sans-serif;
+  --font-family: Roboto, sans-serif;
+  --font-size: 14px;
 }
 
 html {
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: var(--font-size);
 }
 
 html,
@@ -27,4 +28,6 @@ body,
 
 .App {
   padding: 20px;
+  display: grid;
+  gap: 20px;
 }

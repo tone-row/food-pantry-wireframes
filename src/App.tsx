@@ -1,5 +1,6 @@
-import Box from "./components/Box";
 import DesktopWrapper from "./components/DesktopWrapper";
+import LogIn from "./screens/LogIn";
+import Settings from "./screens/Settings";
 
 /*
 
@@ -11,9 +12,10 @@ function App() {
   return (
     <div className="App">
       <DesktopWrapper>
-        <Box>
-          <button>Hi There</button>
-        </Box>
+        <LogIn />
+      </DesktopWrapper>
+      <DesktopWrapper>
+        <Settings />
       </DesktopWrapper>
     </div>
   );
