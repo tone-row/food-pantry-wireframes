@@ -1,0 +1,26 @@
+$font-family: "Fira Sans", Lobster, cursive;
+
+.flow {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  align-content: start;
+}
+
+.flowTitle {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button {
+  font-family: $font-family;
+  padding: 8px;
+}
+
+.title {
+  display: inline;
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 700;
+}

@@ -16,6 +16,7 @@ import EditAction from "./screens/EditAction";
 import Logs from "./screens/Logs";
 import SubscriberLogIn from "./screens/subscribers/LogIn";
 import UserSettings from "./screens/subscribers/UserSettings";
+import Flow from "./app/Flow";
 
 /*
 
@@ -26,7 +27,17 @@ A Table of Contents, where you can view all of the screens
 function App() {
   return (
     <div className="App">
-      <DesktopWrapper>
+      <Flow
+        title="Subscriber: Update Food Preferences"
+        screens={[
+          { title: "Subscriber Logs In", component: <SubscriberLogIn /> },
+          {
+            title: "Subscriber Chooses Food Preferences",
+            component: <FoodPreferences />,
+          },
+        ]}
+      />
+      {/* <DesktopWrapper>
         <SubscriberLogIn />
       </DesktopWrapper>
       <DesktopWrapper>
@@ -76,7 +87,7 @@ function App() {
       </DesktopWrapper>
       <DesktopWrapper>
         <Logs />
-      </DesktopWrapper>
+      </DesktopWrapper> */}
     </div>
   );
 }
