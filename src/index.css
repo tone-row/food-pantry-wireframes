@@ -10,13 +10,14 @@
 }
 
 :root {
-  --font-family: Roboto, sans-serif;
+  --font-family: sans-serif, Georgia, Roboto, sans-serif;
   --font-size: 14px;
 }
 
 html {
   font-family: var(--font-family);
   font-size: var(--font-size);
+  -webkit-font-smoothing: antialiased;
 }
 
 html,
@@ -29,5 +30,7 @@ body,
 .App {
   padding: 20px;
   display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
   gap: 20px;
 }

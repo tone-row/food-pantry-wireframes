@@ -8,7 +8,7 @@ export default function DesktopWrapper({ children }: { children: ReactNode }) {
     <div className={styles.desktopWrapper}>
       <aside>
         <Box>
-          <HorizontalGroup>
+          <HorizontalGroup gap={0.5}>
             <div
               className={styles.circle}
               style={{ "--background-color": "red" } as CSSProperties}

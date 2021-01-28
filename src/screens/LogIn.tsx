@@ -7,17 +7,17 @@ import Button from "../components/Button";
 
 export default function LogIn() {
   return (
-    <Box>
-      <Center>
+    <Center>
+      <Box>
         <BoxWithBorder>
-          <VerticalGroup gap={1}>
+          <VerticalGroup gap={0.5}>
             <Type size={2}>Log In</Type>
             <Input placeholder="Email" />
             <Input type="password" placeholder="Password" />
             <Button>Log In</Button>
           </VerticalGroup>
         </BoxWithBorder>
-      </Center>
-    </Box>
+      </Box>
+    </Center>
   );
 }
