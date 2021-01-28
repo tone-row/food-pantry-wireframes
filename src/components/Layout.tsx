@@ -1,5 +1,4 @@
 import { ReactElement, ReactNode } from "react";
-import Button from "./Button";
 import styles from "./styles.module.scss";
 
 export default function Layout({

@@ -5,4 +5,6 @@ export const defaultLinks = [
   "Items",
   "Distribution",
   "Messages",
+  "Actions",
+  "Logs",
 ];

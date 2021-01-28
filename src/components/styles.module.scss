@@ -167,3 +167,11 @@
   font-size: inherit;
   font-family: inherit;
 }
+
+.brandBlock {
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  justify-self: start;
+  font-size: 3rem;
+}

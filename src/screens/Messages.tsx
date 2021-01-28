@@ -9,7 +9,13 @@ import Type, { Title } from "../components/Type";
 import VerticalGroup from "../components/VerticalGroup";
 import { defaultLinks } from "../constants";
 
-const FAKE_MESSAGES = ["Box is Ready"];
+const FAKE_MESSAGES = [
+  "Box is Ready Email",
+  "Box is Ready Phone Call",
+  "Box is Ready Text Message",
+  "Inventory Update Email",
+  "Inventory Text Message",
+];
 
 export default function Messages() {
   return (

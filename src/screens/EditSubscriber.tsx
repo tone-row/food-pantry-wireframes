@@ -26,6 +26,7 @@ export default function EditSubscriber() {
               <HorizontalGroup gap={0.5}>
                 <Checkbox label="Email" />
                 <Checkbox label="Phone" />
+                <Checkbox label="Text Message" />
               </HorizontalGroup>
             </WithLabel>
             <HorizontalGroup gap={0.5}>

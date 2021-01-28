@@ -30,6 +30,7 @@ export default function EditMessage() {
             <WithLabel label="Message">
               <TextArea
                 value={`Hello {% SUBSCRIBER_NAME %}, your box is ready!`}
+                readOnly
               />
             </WithLabel>
             <WithLabel label="Preview">

@@ -10,6 +10,9 @@ import Subscribers from "./screens/Subscribers";
 import EditMessage from "./screens/EditMessage";
 import Distribution from "./screens/Distribution";
 import Dashboard from "./screens/Dashboard";
+import Actions from "./screens/Actions";
+import EditAction from "./screens/EditAction";
+import Logs from "./screens/Logs";
 
 /*
 
@@ -52,6 +55,15 @@ function App() {
       </DesktopWrapper>
       <DesktopWrapper>
         <Distribution />
+      </DesktopWrapper>
+      <DesktopWrapper>
+        <Actions />
+      </DesktopWrapper>
+      <DesktopWrapper>
+        <EditAction />
+      </DesktopWrapper>
+      <DesktopWrapper>
+        <Logs />
       </DesktopWrapper>
     </div>
   );
