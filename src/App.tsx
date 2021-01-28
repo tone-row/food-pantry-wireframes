@@ -1,4 +1,5 @@
 import DesktopWrapper from "./components/DesktopWrapper";
+import FoodPreferences from "./screens/subscribers/FoodPreferences";
 import EditItem from "./screens/EditItem";
 import EditSubscriber from "./screens/EditSubscriber";
 import Items from "./screens/Items";
@@ -13,6 +14,8 @@ import Dashboard from "./screens/Dashboard";
 import Actions from "./screens/Actions";
 import EditAction from "./screens/EditAction";
 import Logs from "./screens/Logs";
+import SubscriberLogIn from "./screens/subscribers/LogIn";
+import UserSettings from "./screens/subscribers/UserSettings";
 
 /*
 
@@ -23,6 +26,15 @@ A Table of Contents, where you can view all of the screens
 function App() {
   return (
     <div className="App">
+      <DesktopWrapper>
+        <SubscriberLogIn />
+      </DesktopWrapper>
+      <DesktopWrapper>
+        <FoodPreferences />
+      </DesktopWrapper>
+      <DesktopWrapper>
+        <UserSettings />
+      </DesktopWrapper>
       <DesktopWrapper>
         <LogIn />
       </DesktopWrapper>

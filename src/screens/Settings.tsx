@@ -7,7 +7,7 @@ import Select from "../components/Select";
 import { Title } from "../components/Type";
 import VerticalGroup from "../components/VerticalGroup";
 import WithLabel from "../components/WithLabel";
-import { defaultLinks } from "../constants";
+import { defaultLinks, pantryName } from "../constants";
 
 export default function Settings() {
   return (
@@ -16,7 +16,9 @@ export default function Settings() {
         <VerticalGroup gap={1}>
           <Title>Settings</Title>
           <VerticalGroup gap={0.5}>
-            <Input placeholder="Pantry Name" />
+            <WithLabel label="Name">
+              <Input readOnly value={pantryName} />
+            </WithLabel>
             <WithLabel label="Pantry Logo">
               <BrandBlock />
             </WithLabel>

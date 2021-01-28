@@ -9,7 +9,7 @@ import Type, { Title } from "../components/Type";
 import VerticalGroup from "../components/VerticalGroup";
 import { defaultLinks } from "../constants";
 
-export const FAKE_INVENTORY = ["Cabbage", "Apples", "Pineapple"];
+export const FAKE_INVENTORY = ["Cabbage", "Apples", "Pineapple", "Barley"];
 
 export default function Items() {
   return (
