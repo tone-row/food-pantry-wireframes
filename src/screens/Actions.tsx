@@ -11,7 +11,7 @@ import Type, { Title } from "../components/Type";
 import VerticalGroup from "../components/VerticalGroup";
 import { defaultLinks } from "../constants";
 
-const FAKE_ACTIONS = ["Box is Ready"];
+const FAKE_ACTIONS = ["Inventory Updated", "Boxes are Ready"];
 
 export default function Actions() {
   return (

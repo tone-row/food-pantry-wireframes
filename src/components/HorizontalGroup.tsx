@@ -5,14 +5,16 @@ export default function HorizontalGroup({
   children,
   gap = 0,
   align,
+  className = "",
 }: {
   children: ReactNode;
   gap?: number;
   align?: string;
+  className?: string;
 }) {
   return (
     <div
-      className={styles.horizontalGroup}
+      className={[styles.horizontalGroup, className].join(" ")}
       style={{ "--gap": gap, alignItems: align } as CSSProperties}
     >
       {children}

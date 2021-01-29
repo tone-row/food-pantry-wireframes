@@ -53,6 +53,12 @@ export default function EditAction() {
                 />
               </VerticalGroup>
             </WithLabel>
+            <WithLabel label="When to run action">
+              <Select>
+                <option>Manual Run</option>
+                <option>Schedule</option>
+              </Select>
+            </WithLabel>
           </VerticalGroup>
         </VerticalGroup>
       </Box>
