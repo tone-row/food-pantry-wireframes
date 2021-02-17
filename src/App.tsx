@@ -16,6 +16,7 @@ import SubscriberLogIn from "./screens/subscribers/LogIn";
 import UserSettings from "./screens/subscribers/UserSettings";
 import Flow from "./app/Flow";
 import NewItem from "./screens/NewItem";
+import SignUp from "./screens/SignUp";
 
 /*
 
@@ -27,6 +28,11 @@ function App() {
   return (
     <div className="App">
       <h1 style={{ textAlign: "center" }}>Example Flows for Food Pantry App</h1>
+      <Flow
+        title="Sign Up"
+        role="External Person"
+        screens={[{ title: "Person signs up", component: <SignUp /> }]}
+      />
       <Flow
         title="Updating food preferences"
         role="Subscriber"
