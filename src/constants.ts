@@ -1,12 +1,8 @@
 export const defaultLinks = [
   "Dashboard",
-  "Settings",
-  "Subscribers",
-  "Items",
-  "Distribution",
-  "Messages",
-  "Actions",
-  "Logs",
+  "Past Inventory",
+  "Pantries",
+  "Users",
 ];
 
 export const brandImage = "🥗";

@@ -34,3 +34,11 @@ body,
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.reorder {
+  opacity: 0.25;
+}
+
+ul {
+  list-style: inside;
+}
