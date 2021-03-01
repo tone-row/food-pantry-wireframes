@@ -1,18 +1,13 @@
 import React from "react";
 import Box from "../components/Box";
 import Button from "../components/Button";
-import HorizontalGroup, {
-  BetweenHorizontalGroup,
-} from "../components/HorizontalGroup";
-import Input from "../components/Input";
+import { BetweenHorizontalGroup } from "../components/HorizontalGroup";
 import Layout from "../components/Layout";
 import Nav from "../components/Nav";
 import Table from "../components/Table";
 import Type, { Title } from "../components/Type";
 import VerticalGroup from "../components/VerticalGroup";
 import { defaultLinks } from "../constants";
-import { FAKE_INVENTORY } from "./Items";
-import { FAKE_SUBSCRIBERS } from "./Subscribers";
 
 const FAKE_WEEKS = [
   "Week of March 1st, 2021",

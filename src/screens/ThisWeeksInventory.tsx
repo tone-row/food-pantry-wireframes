@@ -19,7 +19,7 @@ export default function ThisWeeksInventory() {
           <Title>Dashboard</Title>
           <Type size={2}>
             Invitations to edit preferences will be sent in 2 days, 3 hours, and
-            15 minutes. Make sure the <a href="#">Inventory</a> is up to date.
+            15 minutes. Make sure the <a href="#hi">Inventory</a> is up to date.
           </Type>
           <hr />
           <VerticalGroup gap={0.5}>
@@ -45,29 +45,8 @@ export default function ThisWeeksInventory() {
                 <li>pantry c</li>
               </ul>
             </Type>
-            <a href="#">Manage Pantries</a>
+            <a href="#hi">Manage Pantries</a>
           </VerticalGroup>
-          {/* <VerticalGroup gap={0.5}>
-            <Type>Latest Actions</Type>
-            <BetweenHorizontalGroup align="center">
-              <Type size={-1}>Box is Ready</Type>
-              <Type size={-1}>
-                <em>January 21st, 2021</em>
-              </Type>
-            </BetweenHorizontalGroup>
-            <BetweenHorizontalGroup align="center">
-              <Type size={-1}>Get User Preferences</Type>
-              <Type size={-1}>
-                <em>January 14th, 2021</em>
-              </Type>
-            </BetweenHorizontalGroup>
-            <BetweenHorizontalGroup align="center">
-              <Type size={-1}>Box is Ready</Type>
-              <Type size={-1}>
-                <em>December 21st, 2020</em>
-              </Type>
-            </BetweenHorizontalGroup>
-          </VerticalGroup> */}
         </VerticalGroup>
       </Box>
     </Layout>

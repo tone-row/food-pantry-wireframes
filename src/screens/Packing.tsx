@@ -1,10 +1,7 @@
 import React from "react";
 import Box from "../components/Box";
 import Button from "../components/Button";
-import HorizontalGroup, {
-  BetweenHorizontalGroup,
-} from "../components/HorizontalGroup";
-import Input from "../components/Input";
+import { BetweenHorizontalGroup } from "../components/HorizontalGroup";
 import Layout from "../components/Layout";
 import Nav from "../components/Nav";
 import Table from "../components/Table";
